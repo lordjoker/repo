@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.invicta.arquillian.test;
+package com.arquillian.test;
 
 import java.io.File;
 import java.net.URL;
@@ -25,27 +25,26 @@ import org.openqa.selenium.WebElement;
  * @author Marcin Wisniewski
  */
 @RunWith(Arquillian.class)
-//@RunAsClient
 public class IndexTest {
     
-//    @ArquillianResource
-//    static URL url;
-//    
+    @ArquillianResource
+    static URL url;
+
     @Drone
     WebDriver browser;
     
-//    @Deployment
-//    public static WebArchive createDeployment() {
-//        WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
-//                .addAsWebResource(new File("src/main/webapp", "index.jsp"));
-//        return war;
-//    }
-//    
+    @Deployment
+    public static WebArchive createDeployment() {
+        WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
+                .addAsWebResource(new File("src/main/webapp", "index.jsp"));
+        return war;
+    }
+    
     @Test
     public void shouldRenderHelloWorld() {
-        browser.get("http://google.pl");
+        browser.get(url.toString());
         final WebElement h1 = browser.findElement(By.tagName("h1"));
-        Assert.assertNotNull("Brak h1", h1);
+        Assert.assertNotNull("Unable to find h1", h1);
         Assert.assertEquals("Hello World!", h1.getText());
     }
     
