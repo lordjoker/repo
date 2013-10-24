@@ -6,9 +6,6 @@
     
     <extension qualifier="webdriver">
         <property name="browser">firefox</property>
-        <property name="javascriptEnabled">true</property>
-        <property name="remoteReusable">true</property>
-        <property name="remoteAddress">http://localhost:4444/wd/hub</property>
     </extension>
 	
 </arquillian>

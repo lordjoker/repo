@@ -6,8 +6,7 @@ package com.arquillian.test;
 
 import java.io.File;
 import java.net.URL;
-import org.jboss.arquillian.api.Deployment;
-import org.jboss.arquillian.container.test.api.RunAsClient;
+import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.drone.api.annotation.Drone;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;
@@ -33,7 +32,7 @@ public class IndexTest {
     @Drone
     WebDriver browser;
     
-    @Deployment
+    @Deployment(testable = false)
     public static WebArchive createDeployment() {
         WebArchive war = ShrinkWrap.create(WebArchive.class, "test.war")
                 .addAsWebResource(new File("src/main/webapp", "index.jsp"));
