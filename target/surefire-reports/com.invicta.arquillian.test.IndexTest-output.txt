@@ -1,3 +1,0 @@
-paü 21, 2013 11:36:56 PM org.jboss.arquillian.drone.webdriver.factory.remote.reusable.ReusedSessionPernamentFileStorage readStore
-INFO: Reused session store is not available at C:\Users\Marcin Wisniewski\.drone-webdriver-session-store, a new one will be created.
-
