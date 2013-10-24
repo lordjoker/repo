@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="16.215" errors="2" skipped="0" tests="2" name="com.arquillian.test.IndexTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
+    <property name="java.vm.version" value="23.25-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="test" value="com.arquillian.test.IndexTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Invicta\Projekt\arquillian-test"/>
+    <property name="java.runtime.version" value="1.7.0_25-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MARCIN~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 7.3.1\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\OpenSSH\bin;c:\Windows\system32;."/>
+    <property name="javax.net.ssl.trustStore" value="c:/Invicta/tomcat.keystore"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Marcin Wisniewski"/>
+    <property name="user.timezone" value="Europe/Belgrade"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="user.name" value="Marcin Wisniewski"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 7.3.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_25\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.arquillian.test.IndexTest test-compile surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pl"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_25\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 7.3.1\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="javax.net.ssl.trustStorePassword" value="3maje2rda"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.335" classname="com.arquillian.test.IndexTest" name="shouldRenderHelloWorld">
+    <error message="Could not lookup value for field public static java.net.URL com.arquillian.test.IndexTest.url" type="java.lang.RuntimeException">java.lang.RuntimeException: Could not lookup value for field public static java.net.URL com.arquillian.test.IndexTest.url
+	at org.jboss.arquillian.test.impl.enricher.resource.ArquillianResourceTestEnricher.enrich(ArquillianResourceTestEnricher.java:61)
+	at org.jboss.arquillian.test.impl.TestInstanceEnricher.enrich(TestInstanceEnricher.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.before(EventTestRunnerAdaptor.java:95)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:222)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:240)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:185)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:147)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.jboss.arquillian.junit.container.JUnitTestRunner.execute(JUnitTestRunner.java:65)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.executeTest(ServletTestRunner.java:160)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.execute(ServletTestRunner.java:126)
+	at org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner.doGet(ServletTestRunner.java:90)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1539)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:281)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:655)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:595)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:98)
+	at com.sun.enterprise.web.PESessionLockingStandardPipeline.invoke(PESessionLockingStandardPipeline.java:91)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:162)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:330)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:231)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:174)
+	at com.sun.grizzly.http.ProcessorTask.invokeAdapter(ProcessorTask.java:828)
+	at com.sun.grizzly.http.ProcessorTask.doProcess(ProcessorTask.java:725)
+	at com.sun.grizzly.http.ProcessorTask.process(ProcessorTask.java:1019)
+	at com.sun.grizzly.http.DefaultProtocolFilter.execute(DefaultProtocolFilter.java:225)
+	at com.sun.grizzly.DefaultProtocolChain.executeProtocolFilter(DefaultProtocolChain.java:137)
+	at com.sun.grizzly.DefaultProtocolChain.execute(DefaultProtocolChain.java:104)
+	at com.sun.grizzly.DefaultProtocolChain.execute(DefaultProtocolChain.java:90)
+	at com.sun.grizzly.http.HttpProtocolChain.execute(HttpProtocolChain.java:79)
+	at com.sun.grizzly.ProtocolChainContextTask.doCall(ProtocolChainContextTask.java:54)
+	at com.sun.grizzly.SelectionKeyContextTask.call(SelectionKeyContextTask.java:59)
+	at com.sun.grizzly.ContextTask.run(ContextTask.java:71)
+	at com.sun.grizzly.util.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:532)
+	at com.sun.grizzly.util.AbstractThreadPool$Worker.run(AbstractThreadPool.java:513)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.RuntimeException: Provider for type class java.net.URL returned a null value: org.jboss.arquillian.container.test.impl.enricher.resource.URLResourceProvider@55e6d9e8
+	at org.jboss.arquillian.test.impl.enricher.resource.ArquillianResourceTestEnricher.lookup(ArquillianResourceTestEnricher.java:115)
+	at org.jboss.arquillian.test.impl.enricher.resource.ArquillianResourceTestEnricher.enrich(ArquillianResourceTestEnricher.java:57)
+	... 83 more
+</error>
+    <system-out>PlainTextActionReporterSUCCESSDescription: deploy AdminCommandApplication deployed with name test.
+    [name=test
+</system-out>
+    <system-err>paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element security-configurations at [row,col,system-id]: [2,3,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-job-config at [row,col,system-id]: [23,3,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-scheduled-executor-service at [row,col,system-id]: [58,5,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-executor-service at [row,col,system-id]: [59,5,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element context-service at [row,col,system-id]: [60,5,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-thread-factory at [row,col,system-id]: [61,5,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:57 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element batch-runtime-configuration at [row,col,system-id]: [132,7,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:07:58 AM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element cdi-service at [row,col,system-id]: [145,7,&quot;file:/D:/Invicta/Projekt/arquillian-test/src/test/resources/domain.xml&quot;]
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.36 started in: 290ms - bound to [0.0.0.0:8080]
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.36 started in: 201ms - bound to [0.0.0.0:4848]
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.36 started in: 233ms - bound to [0.0.0.0:8181]
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.36 started in: 152ms - bound to [0.0.0.0:3700]
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.36 started in: 84ms - bound to [0.0.0.0:7676]
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.server.ApplicationLoaderService processApplication
+SEVERE: CORE10012: Application previously deployed is not at its original location any more: file:/C:/Users/MARCIN~1/AppData/Local/Temp/gfembed2911137605307545504tmp//applications/arquillian-example-1.0-SNAPSHOT/
+paź 24, 2013 10:08:00 AM com.sun.enterprise.v3.server.AppServerStartup run
+INFO: GlassFish Server Open Source Edition 3.1.1 (12) startup time : Embedded (1 644ms), startup services(1 981ms), total(3 625ms)
+paź 24, 2013 10:08:01 AM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread startConnector
+INFO: JMXStartupService: Started JMXConnector, JMXService URL = service:jmx:rmi://DELL15R2:8686/jndi/rmi://DELL15R2:8686/jmxrmi
+paź 24, 2013 10:08:01 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@4c074c0d result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    servers.server.server.config-ref=server-config
+
+paź 24, 2013 10:08:01 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@7e1051cb result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.http-service.virtual-server.__asadmin.id=__asadmin
+    configs.config.server-config.http-service.virtual-server.server.id=server
+
+paź 24, 2013 10:08:01 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@5c64885 result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.http-service.virtual-server.server.network-listeners=http-listener-1,http-listener-2
+
+paź 24, 2013 10:08:01 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@1cc316b9 result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.network-listeners.network-listener.http-listener-1.enabled=true
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@4c08da6f result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.network-listeners.network-listener.http-listener-1.protocol=http-listener-1
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@65107b3f result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.protocols.protocol.http-listener-1.security-enabled=false
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@1d0b98ef result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.network-listeners.network-listener.http-listener-1.port=8080
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@5b6ef3b1 result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.network-listeners.network-listener.http-listener-2.enabled=true
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@5141185c result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.network-listeners.network-listener.http-listener-2.protocol=http-listener-2
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer executeCommand
+INFO: command get parameters[Ljava.lang.String;@8a669b1 result: PlainTextActionReporterSUCCESSDescription: get AdminCommandnull
+    configs.config.server-config.network-config.protocols.protocol.http-listener-2.security-enabled=true
+
+paź 24, 2013 10:08:02 AM org.jboss.arquillian.drone.webdriver.factory.remote.reusable.ReusedSessionPernamentFileStorage readStore
+INFO: Reused session store is not available at C:\Users\Marcin Wisniewski\.drone-webdriver-session-store, a new one will be created.
+paź 24, 2013 10:08:06 AM org.hibernate.validator.util.Version &lt;clinit&gt;
+INFO: Hibernate Validator null
+paź 24, 2013 10:08:06 AM org.hibernate.validator.engine.resolver.DefaultTraversableResolver detectJPA
+INFO: Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+paź 24, 2013 10:08:06 AM com.sun.enterprise.security.SecurityLifecycle &lt;init&gt;
+INFO: SEC1002: Security Manager is OFF.
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+SEVERE: SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......&lt;..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&amp;...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&amp;.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....&gt;...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......&apos;....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFO: SEC1010: Entering Security Startup Service
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.PolicyLoader loadPolicy
+INFO: SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFO: SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFO: SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFO: SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.audit.AuditManager loadAuditModules
+WARNING: Audit: Cannot load AuditModule = default
+java.lang.ClassNotFoundException: com.sun.enterprise.security.ee.Audit
+	at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1519)
+	at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1369)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.sun.enterprise.security.audit.AuditManager.loadAuditModule(AuditManager.java:248)
+	at com.sun.enterprise.security.audit.AuditManager.loadAuditModules(AuditManager.java:169)
+	at com.sun.enterprise.security.SecurityLifecycle.onInitialization(SecurityLifecycle.java:195)
+	at com.sun.enterprise.security.SecurityLifecycle.postConstruct(SecurityLifecycle.java:251)
+	at com.sun.hk2.component.AbstractCreatorImpl.inject(AbstractCreatorImpl.java:131)
+	at com.sun.hk2.component.ConstructorCreator.initialize(ConstructorCreator.java:91)
+	at com.sun.hk2.component.AbstractCreatorImpl.get(AbstractCreatorImpl.java:82)
+	at com.sun.hk2.component.SingletonInhabitant.get(SingletonInhabitant.java:67)
+	at com.sun.hk2.component.EventPublishingInhabitant.get(EventPublishingInhabitant.java:139)
+	at com.sun.hk2.component.AbstractInhabitantImpl.get(AbstractInhabitantImpl.java:76)
+	at com.sun.enterprise.security.SecuritySniffer.setup(SecuritySniffer.java:109)
+	at com.sun.enterprise.v3.server.ContainerStarter.startContainer(ContainerStarter.java:116)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainer(ApplicationLifecycle.java:944)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainerInfos(ApplicationLifecycle.java:652)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:368)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:240)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:382)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$1.execute(CommandRunnerImpl.java:355)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:370)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1064)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1200(CommandRunnerImpl.java:96)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1244)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1232)
+	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:129)
+	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:105)
+	at org.jboss.arquillian.container.glassfish.embedded_3_1.GlassFishContainer.deploy(GlassFishContainer.java:227)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:161)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:128)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:271)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:95)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:80)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:263)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:80)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:182)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+paź 24, 2013 10:08:07 AM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFO: SEC1011: Security Service(s) Started Successfully
+paź 24, 2013 10:08:07 AM com.sun.enterprise.web.WebContainer createHttpListener
+INFO: WEB0169: Created HTTP listener [http-listener-1] on host/port [0.0.0.0:8080]
+paź 24, 2013 10:08:07 AM com.sun.enterprise.web.WebContainer createHttpListener
+INFO: WEB0169: Created HTTP listener [http-listener-2] on host/port [0.0.0.0:8181]
+paź 24, 2013 10:08:07 AM com.sun.enterprise.web.WebContainer createHttpListener
+INFO: WEB0169: Created HTTP listener [admin-listener] on host/port [0.0.0.0:4848]
+paź 24, 2013 10:08:07 AM com.sun.enterprise.web.WebContainer createHosts
+INFO: WEB0171: Created virtual server [server]
+paź 24, 2013 10:08:07 AM com.sun.enterprise.web.WebContainer createHosts
+INFO: WEB0171: Created virtual server [__asadmin]
+paź 24, 2013 10:08:08 AM com.sun.enterprise.web.WebContainer loadSystemDefaultWebModules
+INFO: WEB0172: Virtual server [server] loaded default web module []
+paź 24, 2013 10:08:09 AM com.sun.enterprise.web.WebApplication start
+INFO: WEB0671: Loading application [test] at [/test]
+paź 24, 2013 10:08:09 AM org.glassfish.deployment.admin.DeployCommand execute
+INFO: test was successfully deployed in 3 738 milliseconds.
+paź 24, 2013 10:08:09 AM org.jboss.arquillian.testenricher.cdi.container.BeanManagerProducer lookup
+INFO: BeanManager not found.
+</system-err>
+  </testcase>
+  <testcase time="0.462" classname="com.arquillian.test.IndexTest" name="com.arquillian.test.IndexTest">
+    <error message="Unexpected callable present in Drone Context, should be already instantiated at this moment." type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unexpected callable present in Drone Context, should be already instantiated at this moment.
+	at org.jboss.arquillian.drone.impl.InstanceOrCallableInstanceImpl.asInstance(InstanceOrCallableInstanceImpl.java:57)
+	at org.jboss.arquillian.drone.webdriver.augmentation.AugmentingEnhancer.canEnhance(AugmentingEnhancer.java:75)
+	at org.jboss.arquillian.drone.impl.DroneEnhancer.deenhanceDrone(DroneEnhancer.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.drone.impl.DroneDestructor.destroyClassScopedDrone(DroneDestructor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.afterClass(EventTestRunnerAdaptor.java:87)
+	at org.jboss.arquillian.junit.Arquillian$3$1.evaluate(Arquillian.java:204)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-out>PlainTextActionReporterSUCCESSNo monitoring data to report.
+</system-out>
+  </testcase>
+</testsuite>
