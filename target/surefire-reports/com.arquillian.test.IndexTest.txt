@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.arquillian.test.IndexTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.084 sec - in com.arquillian.test.IndexTest
